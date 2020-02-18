@@ -1,10 +1,24 @@
 /* Enter your Styles below! */
 
-body { 
+body {
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
 	 }
-
+	 .homepage{
+	 	width: 100%;
+	 	height: 100vh;
+	 	background: url("../images/columbiagorgewaterfall.jpeg");
+	 	background-attachment:absolute;
+	 	background-repeat: no-repeat;
+	 	background-size: cover;
+	 }
+	 h1 {
+	 	font-family: 'Roboto', sans-serif;
+	 	font-weight: 900;
+	 	font-size: 80px;
+	 	letter-spacing: 5px;
+	 	color: white;
+	 }
 h1, h2, h3, h4 {
 	font-family: Helvetica, sans-serif;
 }
@@ -34,7 +48,7 @@ header {margin-bottom: 20px;}
 /* ensures that your images stretch the width of their containers */
 img { width: 100%; }
 
-a { 
+a {
 	color: red;
 	text-decoration: none;
 	 }
