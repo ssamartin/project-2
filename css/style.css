@@ -4,21 +4,113 @@ body {
 	font-family: Helvetica, sans-serif;
 	font-size: 16px;
 	 }
-	 .homepage{
-	 	width: 100%;
-	 	height: 100vh;
-	 	background: url("../images/columbiagorgewaterfall.jpeg");
-	 	background-attachment:absolute;
-	 	background-repeat: no-repeat;
-	 	background-size: cover;
-	 }
-	 h1 {
-	 	font-family: 'Roboto', sans-serif;
-	 	font-weight: 900;
-	 	font-size: 80px;
-	 	letter-spacing: 5px;
-	 	color: white;
-	 }
+.banner_grid{
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	width: 100%;
+	height: 20vh;
+}
+.list_placement{
+	grid-column: 5 / 7;
+	grid-row: 1 / 7;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	background-color: ;
+}
+.homepage{
+	display: grid;
+	grid-template-columns: repeat(14, 1fr);
+	grid-template-rows: repeat(20, 1fr);
+	width: 100%;
+	height: 80vh;
+	background-image: url("../images/gorgewaterfall.jpeg");
+	background-attachment:absolute;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.button_placement{
+	grid-column: 2 / 6;
+	grid-row: 16 / 20;
+	background-color: ;
+}
+.homepage_title_placement{
+	grid-column: 5/ 10;
+	grid-row: 14 / 16;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: ;
+}
+
+.logo_placement {
+	grid-column: 1 / 2;
+	grid-row: 1 / 7;
+	background-color:;
+}
+.logo_placement {
+	height: 100%;
+}
+
+li {
+  float: right;
+	background-color: ;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+p {
+ margin: 25px 50px 75px 100px;
+}
+
+h1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900;
+	font-size: 80px;
+	letter-spacing: 5px;
+	color: white;
+}
 h1, h2, h3, h4 {
 	font-family: Helvetica, sans-serif;
 }
@@ -66,6 +158,69 @@ a:hover { color: black; }
 	background-color: #ccc;
 	padding: 20px;
 }
+/*BUTTON HOMEPAGEANIMATION */
+.draw-border {
+  box-shadow: inset 0 0 0 4px #58afd1;
+  color: #58afd1;
+  -webkit-transition: color 0.25s 0.0833333333s;
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.draw-border::before, .draw-border::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.draw-border::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.draw-border::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.draw-border:hover {
+  color: #ffe593;
+}
+.draw-border:hover::before, .draw-border:hover::after {
+  border-color: #ffe593;
+  -webkit-transition: border-color 0s, width 0.25s, height 0.25s;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.draw-border:hover::before {
+  -webkit-transition-delay: 0s, 0s, 0.25s;
+          transition-delay: 0s, 0s, 0.25s;
+}
+.draw-border:hover::after {
+  -webkit-transition-delay: 0s, 0.25s, 0s;
+          transition-delay: 0s, 0.25s, 0s;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem 'Roboto Slab', sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+	outline: 2px dotted;
+  outline-color: rgba(50, 115, 220, 0.0);
+
+}
+
+/*---------------------------*/
+
 
 @media only screen and (min-width:768px) {
 
