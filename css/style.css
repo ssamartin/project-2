@@ -1,9 +1,53 @@
 /* Enter your Styles below! */
-
+html {
+	font-size: 100%;
+}
 body {
-	font-family: Avenir;
-	font-size: 16px;
-	 }
+	margin: 0;
+	font-family: 'Avenir', sans-serif;
+	color: #666;
+	font-size: 1rem;
+}
+.container {
+	width: 100vw;
+	height:600px;
+	top: 0;
+	left: 0;
+}
+.slide-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	text-align: center;
+	text-shadow: 0 0 20px rgba(0,0,0,0.5);
+	z-index: 1;
+	-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+}
+.slide-content p {
+	font-size: calc(1rem + 10 * (100vw - 375px)/ (1199 - 375));
+	font-weight: 100;
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+h1,
+h2 {
+	margin-top: 0;
+
+	font-size: calc(2rem + 28 * (100vw - 375px)/ (1199 - 375));
+	margin-bottom: 0.2em;
+	font-weight: bold;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	font-weight: bold;
+}
+a:hover {
+	color: black;
+}
 .banner_grid{
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
@@ -30,16 +74,34 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-.sponsor{
-	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: repeat(6, 1fr);
+.sponsor_placement{
+	height: 25vh;
 	width: 100%;
-	height: 20vh;
-	background-image: url("../images/GFsponsor.jpeg");
+	background-color: aqua;
+}
+.sponsor{
+	position: relative;
+	height: 100%;
+	background-image: url("../images/gfsponsor.jpg");
 	background-attachment:absolute;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-transition: all 1000ms ease;
+-moz-transition: all 1000ms ease;
+-ms-transition: all 1000ms ease;
+-o-transition: all 1000ms ease;
+transition: all 1000ms ease;
+}
+.video_placement{
+	background-color: red;
+	display:inline-block;
+}
+.info_text_placement{
+	background-color: red;
+	display:inline-block;
+	position: absolute;
+	margin-top: 0;
+
 }
 .button_placement{
 	grid-column: 2 / 6;
@@ -229,13 +291,6 @@ a:hover { color: black; }
   outline-color: rgba(50, 115, 220, 0.0);
 
 }
-.fs-slide {
-	background-image: url("../image/gorgephoto1.jpeg");
-	background-attachment:absolute;
-	background-repeat: no-repeat;
-	background-size: cover;
-
-}
 /*---------------------------*/
 
 
@@ -245,4 +300,13 @@ a:hover { color: black; }
 
 @media only screen and (min-width:1224px) {
 
+}
+@media (min-width: 1200px) {
+	h1,
+	h2 {
+		font-size: 60px;
+	}
+	.slide-content p {
+		font-size: 26px;
+	}
 }

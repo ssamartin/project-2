@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang"en">
+<head>
+	<meta charset="UTF-8">
+	<title>Project One Template - Homepage</title>
+	<meta name="viewport" content="width=device-width">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap" rel="stylesheet">
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script>
+
+</head>
+<body>
+  <ul class="banner_grid">
+  	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 308.49 205.44"><defs><style>.cls-1{fill:none;stroke:#898989;stroke-miterlimit:10;stroke-width:8px;}.cls-2{font-size:34px;fill:#231f20;font-family:Avenir-Medium, Avenir;font-weight:500;}.cls-3{letter-spacing:-0.02em;}</style></defs><title>GFlogo</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M135.81,44.3c-8.83.29-11.5,9.93-13.54,18a21.63,21.63,0,0,1-3.59,8c-.92,1.2-2.35,3-4.18,3-2-.06-2.47-2.3-4.49-3.38-3.74-2-8.23,2.36-9.27,3.38-4.27,4.16-4.06,8.55-7.48,9.72-1.75.6-4.07-2.54-7.81-2.87a16.49,16.49,0,0,0-8.67,1.27c-2.18.95-18,6.63-14.41,14.78,2.54,5.79,43.8,6,50.59,13.23a8.59,8.59,0,0,1,2.43,5.48c-.08.33-.81,4.29-4.35,5.31-12.92,3.73-52.32-2.08-52.32-2.08s-24.65-4.73-33.46-1.48a7.92,7.92,0,0,0-4.61,3.65,6.58,6.58,0,0,0-.34,4.54,8.28,8.28,0,0,0,4,4.53c7.11,4.26,25.09,4.18,31.59,4.32,11.29.22,17.45.21,25.78.22,11.3,0,18.73,0,31.87-.46-31.57,1.09,40.48-3.27,45.57,6.94"/><path class="cls-1" d="M63.88,97.75c1.18,0,71.62,12.86,100.52-1.26.59-.29-10-22.47-15.3-36.8-1.61-4.32-5.39-16.33-14-15.26"/><text class="cls-2" transform="translate(44.51 32.71)">Go<tspan class="cls-3" x="46.65" y="0">r</tspan><tspan x="58.62" y="0">ge</tspan></text><text class="cls-2" transform="translate(0 58.4)">Friends</text></g></g></svg>
+
+  	<div class="list_placement">
+  		<li class="dropdown">
+  			<a href="javascript:void(0)" class="dropbtn">Home</a>
+  			<div class="dropdown-content">
+  				<a href="#">Link 1</a>
+  				<a href="#">Link 2</a>
+  				<a href="#">Link 3</a>
+  			</div>
+  		</li>
+  	  <li><a href="#news">About</a></li>
+  		<li><a href="#home">Protect</a></li>
+  		<li><a href="#home">Hike</a></li>
+  		<li><a href="#home">Work</a></li>
+
+  	</div>
+  </ul>
+
+
+  <!--slideshow code-->
+
+  <link rel="stylesheet" href="https://demo.sirv.com/ebay/css-fadeshow.min.css">
+
+  <div class="container">
+    <div data-am-fadeshow="quick-nav prev-next-nav">
+
+      <!-- Radio -->
+      <input type="radio" name="css-fadeshow" id="slide-1" />
+      <input type="radio" name="css-fadeshow" id="slide-2" />
+      <input type="radio" name="css-fadeshow" id="slide-3" />
+      <input type="radio" name="css-fadeshow" id="slide-4" />
+      <input type="radio" name="css-fadeshow" id="slide-5" />
+
+      <!-- Slides -->
+      <div class="fs-slides">
+        <div class="fs-slide" style="background-image: url(images/gorgephoto1.jpg);">
+          <!-- You can add content to slides (class names are not bound to CSS Fadeshow) -->
+          <div class="slide-content">
+            <h1>Gorge Friends</h1>
+            <p>Preserving the Gorge for generations to come.</p>
+          </div>
+        </div>
+        <div class="fs-slide" style="background-image: url(images/gorgephoto2.jpg);">
+              <div class="slide-content">
+            <h1>Gorge Friends</h1>
+            <p>ensuring that the beautiful and wild Columbia Gorge remains a place apart, an unspoiled treasure for generations to come.
+</p>
+          </div>
+
+        </div>
+        <div class="fs-slide" style="background-image: url(images/gorgephoto3.jpg);">
+                    <div class="slide-content">
+            <h1>Showcase anything here</h1>
+            <p>Great for feature-rich products</p>
+          </div>
+
+        </div>
+        <div class="fs-slide" style="background-image: url(images/gorgewaterfall.jpeg);">
+                    <div class="slide-content">
+            <a href="https://sirv.com/?utm_campaign=codepen"><h1>Get more done with Sirv</h1>
+              <p>Resize and optimize images on-the-fly with Sirv. Try it free</p></a>
+          </div>
+        </div>
+        <div class="fs-slide" style="background-image: url(images/gorgephoto1.jpg);">
+                              <div class="slide-content">
+            <a href="https://sirv.com/?utm_campaign=codepen"><h1>Get more done with Sirv</h1>
+              <p>Resize and optimize images on-the-fly with Sirv. Try it free</p></a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- Quick Navigation -->
+      <div class="fs-quick-nav">
+        <label class="fs-quick-btn" for="slide-1"></label>
+        <label class="fs-quick-btn" for="slide-2"></label>
+        <label class="fs-quick-btn" for="slide-3"></label>
+        <label class="fs-quick-btn" for="slide-4"></label>
+        <label class="fs-quick-btn" for="slide-5"></label>
+      </div>
+
+      <!-- Prev Navigation -->
+      <div class="fs-prev-nav">
+        <label class="fs-prev-btn" for="slide-1"></label>
+        <label class="fs-prev-btn" for="slide-2"></label>
+        <label class="fs-prev-btn" for="slide-3"></label>
+        <label class="fs-prev-btn" for="slide-4"></label>
+        <label class="fs-prev-btn" for="slide-5"></label>
+      </div>
+      <div id="trigger_sponsor">
+      </div>
+      <!-- Next Navigation -->
+      <div class="fs-next-nav">
+        <label class="fs-next-btn" for="slide-1"></label>
+        <label class="fs-next-btn" for="slide-2"></label>
+        <label class="fs-next-btn" for="slide-3"></label>
+        <label class="fs-next-btn" for="slide-4"></label>
+        <label class="fs-next-btn" for="slide-5"></label>
+      </div>
+
+      <!-- Slide Counter -->
+      <div class="fs-slide-counter">
+        <span class="fs-slide-counter-current"></span>/<span class="fs-slide-counter-total"></span>
+      </div>
+
+        <!--slideshow code-->
+      </div>
+    </div>
+      <section class="sponsor_placement">
+        <div class="sponsor" id="sponsor_id">
+        </div>
+      </section>
+      <section class="video_placement">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+        </iframe>
+      </section>
+      <section class="info_text_placement">
+        <p> Hi, I'm yoshi, Im the nihilist
+        </p>
+      </section>
+        <section class= "homepage">
+        	<div class="title">
+        			<h1 class="focg"></h1>
+        	</div>
+        	<div class="homepage_title_placement">
+        		<h1 class="homepage_title">Gorge Friends</h1>
+        	</div>
+        	<div class="button_placement">
+        		<button class="btn draw-border">Join Now</button>
+        	</div>
+      	</section>
+
+        <script
+         src="https://code.jquery.com/jquery-3.4.1.min.js"
+         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+         crossorigin="anonymous"></script>
+       <script src="js/script.js"></script>
+
+</body>
+</html
