@@ -14,4 +14,6 @@ $(function collabTransition() {
                     .setTween(tween)
 //                    .addIndicators({name: "contact"}) // add indicators (requires plugin)
                     .addTo(controller);
+
+                    
 });
