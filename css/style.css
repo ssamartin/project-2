@@ -63,6 +63,10 @@ a:hover {
   align-items: center;
 }
 
+.list_placement > li {
+	margin: 5px;
+}
+
 .sponsor_placement{
 	height: 25vh;
 	width: 100%;
